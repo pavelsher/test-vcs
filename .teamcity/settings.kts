@@ -51,7 +51,7 @@ object SshAgentBuild : BuildType({
                 git clone ssh://git@git.jetbrains.team/tcqaa-internal/sample-ssh-agent-project.git
                    git config --global --unset core.sshCommand
             """.trimIndent()
-            param("teamcity.kubernetes.executor.pull.policy", "IfNotPresent")
+            //param("teamcity.kubernetes.executor.pull.policy", "IfNotPresent")
         }
     }
 
